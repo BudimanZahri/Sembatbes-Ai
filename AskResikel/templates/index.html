@@ -1,0 +1,181 @@
+<!doctype html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>AskResikel</title>
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+            <style>
+                body {
+                    font-family: 'Poppins', sans-serif;
+                    background-color: #f4f7fc;
+                    margin: 0;
+                    padding: 0;
+                }
+                h1 {
+                    text-align: center;
+                    color: #333;
+                    padding-top: 20px;
+                    font-weight: 600;
+                }
+                #chat-box {
+                    max-width: 700px;
+                    margin: 40px auto;
+                    background-color: white;
+                    border-radius: 15px;
+                    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+                    overflow-y: auto;
+                    height: 450px;
+                    padding: 25px;
+                    display: flex;
+                    flex-direction: column;
+                }
+                #chat-log {
+                    flex-grow: 1;
+                    overflow-y: auto;
+                    margin-bottom: 10px;
+                    padding: 10px;
+                    border-bottom: 2px solid #f0f0f0;
+                }
+                .message {
+                    margin-bottom: 15px;
+                    display: flex;
+                    align-items: flex-start;
+                    max-width: 80%;
+                }
+                .user-message {
+                    background-color: #007bff;
+                    color: white;
+                    padding: 10px 15px;
+                    border-radius: 20px;
+                    margin-left: auto;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                }
+                .bot-message {
+                    background-color: #28a745;
+                    color: white;
+                    padding: 10px 15px;
+                    border-radius: 20px;
+                    margin-right: auto;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                }
+                .message-time {
+                    font-size: 12px;
+                    margin-left: 10px;
+                    color: white;
+                }
+                .avatar {
+                    width: 35px;
+                    height: 35px;
+                    border-radius: 50%;
+                    margin-right: 10px;
+                }
+                .user-avatar {
+                    background-color: #007bff;
+                }
+                .bot-avatar {
+                    background-color: #28a745;
+                }
+                #user-input {
+                    width: 85%;
+                    padding: 10px;
+                    font-size: 16px;
+                    border-radius: 25px;
+                    border: 1px solid #ddd;
+                    outline: none;
+                    transition: border 0.3s ease;
+                }
+                #user-input:focus {
+                    border-color: #007bff;
+                }
+                button {
+                    padding: 10px 15px;
+                    font-size: 16px;
+                    background-color: #007bff;
+                    color: white;
+                    border: none;
+                    border-radius: 25px;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease;
+                }
+                button:hover {
+                    background-color: #0056b3;
+                }
+                .message-container {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+            </style>
+        </head>
+        <body>
+            <h1>AskResikel</h1>
+            <div id="chat-box">
+                <div id="chat-log"></div>
+                <div class="message-container">
+                    <input type="text" id="user-input" placeholder="Ask something..."/>
+                    <button onclick="sendMessage()">Send</button>
+                </div>
+            </div>
+            <script>
+                function getCurrentTime() {
+                    const now = new Date();
+                    let hours = now.getUTCHours() + 7; // UTC +7
+                    const minutes = now.getUTCMinutes();
+                    
+                    // Ensure the hours stay within the 24-hour range
+                    if (hours >= 24) {
+                        hours -= 24;
+                    }
+                    
+                    const formattedHours = hours < 10 ? '0' + hours : hours;
+                    const formattedMinutes = minutes < 10 ? '0' + minutes : minutes;
+                    return formattedHours + ':' + formattedMinutes;
+                }
+
+                function sendMessage() {
+                    var userInput = document.getElementById('user-input').value;
+                    if (userInput.trim() !== "") {
+                        var currentTime = getCurrentTime();
+                        fetch('/chat', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify({ message: userInput })
+                        })
+                        .then(response => response.json())
+                        .then(data => {
+                            var chatLog = document.getElementById('chat-log');
+                            chatLog.innerHTML += `
+                                <div class="message user-message">
+                                    <img class="avatar user-avatar" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMHs8IijGQbElzCqzeTlr6Tz-tAAGgA9HXlQ&s" alt="User Avatar"/>
+                                    ${userInput}
+                                    <div class="message-time">${currentTime}</div>
+                                </div>`;
+                            chatLog.innerHTML += `
+                                <div class="message bot-message">
+                                    <img class="avatar bot-avatar" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMHs8IijGQbElzCqzeTlr6Tz-tAAGgA9HXlQ&s" alt="Bot Avatar"/>
+                                    ${data.response}
+                                    <div class="message-time">${currentTime}</div>
+                                </div>`;
+                            document.getElementById('user-input').value = "";
+                            chatLog.scrollTop = chatLog.scrollHeight;
+                        });
+                    }
+                }
+
+                document.getElementById('user-input').addEventListener('keydown', function(event) {
+                    if (event.key === 'Enter') {
+                        sendMessage();
+                    }
+                });
+            </script>
+        </body>
+        </html>

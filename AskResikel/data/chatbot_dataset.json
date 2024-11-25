@@ -1,0 +1,124 @@
+[
+    {
+        "tag": "greeting",
+        "patterns": [
+            "Halo", "Hi", "Selamat pagi", "Selamat siang", "Selamat malam", "Apa kabar?",
+            "Hai AskResikel", "AskResikel, apa kabar?", "Hello", "Halo, AskResikel!",
+            "Selamat sore", "Apa yang sedang kamu lakukan?", "Pagi! Apa kabar?",
+            "Hai, semuanya!", "Halo, apa kabar? Semoga hari ini menyenankan!", 
+            "Hi AskResikel, bagaimana keadaanmu?", "Salam kenal, AskResikel!", 
+            "Selamat datang, AskResikel!", "Apa kabar, teman?"
+        ],
+        "responses": [
+            "Halo! Ada yang bisa saya bantu hari ini? 😊", 
+            "Hi! Senang bisa membantu. Ada yang bisa saya lakukan untuk Anda?", 
+            "Hai! Apa kabar? Saya siap membantu Anda kapan saja.",
+            "Halo, saya AskResikel! Senang bertemu Anda. Apa yang bisa saya bantu?", 
+            "Selamat pagi! Semoga hari Anda menyenankan. Ada yang bisa saya bantu?"
+        ]
+    },
+    {
+        "tag": "goodbye",
+        "patterns": [
+            "Selamat tinggal", "Dadah", "Sampai jumpa", "Terima kasih, AskResikel", 
+            "AskResikel, sampai jumpa", "Selamat malam", "Sampai bertemu lagi", 
+            "Terima kasih, sampai jumpa", "Dadah AskResikel", "Sampai nanti",
+            "Bye!", "AskResikel, semoga hari Anda menyenankan"
+        ],
+        "responses": [
+            "Selamat tinggal! Semoga hari Anda menyenankan. Jangan ragu untuk kembali!", 
+            "Dadah! Semoga hari Anda penuh kebahagiaan. Sampai jumpa lagi!", 
+            "Sampai jumpa lagi! Semoga segala urusan Anda lancar. AskResikel selalu siap membantu!", 
+            "Terima kasih! Sampai bertemu lagi. Jangan sungkan untuk menghubungi saya kapan saja!", 
+            "AskResikel selalu siap membantu. Sampai jumpa, dan semoga hari Anda luar biasa!"
+        ]
+    },
+    {
+        "tag": "password_management",
+        "patterns": [
+            "Bagaimana cara mengganti password?", "Cara ganti password di aplikasi", 
+            "Lupa password, bagaimana cara menggantinya?", "Apa yang harus dilakukan kalau lupa password?", 
+            "Saya tidak ingat password saya, apa yang harus dilakukan?", 
+            "Bagaimana cara reset password?", "Apa yang harus dilakukan jika lupa password aplikasi?",
+            "Apakah bisa mengganti password melalui email?", "Password saya tidak bisa diubah, kenapa?"
+        ],
+        "responses": [
+            "Untuk mengganti password, buka menu Pengaturan Akun, pilih Ganti Password, masukkan password lama dan password baru, lalu klik Simpan.", 
+            "Jika lupa password, tekan opsi Lupa Password di halaman login dan ikuti langkah-langkah yang diberikan.", 
+            "Anda bisa mereset password melalui email yang terdaftar di aplikasi.", 
+            "Silakan coba untuk menggunakan opsi Lupa Password untuk reset melalui email.",
+            "Pastikan Anda memasukkan password lama dengan benar saat mengganti password."
+        ]
+    },
+    {
+        "tag": "account_registration",
+        "patterns": [
+            "Bagaimana cara mendaftar akun?", "Cara daftar di aplikasi", 
+            "Langkah-langkah pendaftaran akun", "Saya ingin membuat akun baru, bagaimana caranya?", 
+            "Apa syarat mendaftar akun?", "Bagaimana langkah-langkah registrasi akun?", 
+            "Apa saja yang perlu diisi saat mendaftar?", "Saya ingin mulai daftar akun, apa yang harus dilakukan?"
+        ],
+        "responses": [
+            "Untuk mendaftar, buka aplikasi dan pilih opsi Daftar. Isi data yang diperlukan seperti nama, email, dan password, lalu klik Daftar.", 
+            "Pendaftaran akun bisa dilakukan dengan mengisi form di halaman Daftar pada aplikasi.", 
+            "Cukup masukkan data diri Anda di halaman pendaftaran, dan klik Daftar.",
+            "Isi form dengan informasi yang diperlukan dan akun Anda akan dibuat."
+        ]
+    },
+    {
+        "tag": "account_login",
+        "patterns": [
+            "Bagaimana cara login?", "Cara masuk ke aplikasi", 
+            "Langkah-langkah untuk login", "Saya ingin login, bagaimana caranya?", 
+            "Login di aplikasi bagaimana?", "Apa yang harus dilakukan untuk login?", 
+            "Kenapa saya tidak bisa login?", "Tolong bantu login ke aplikasi saya"
+        ],
+        "responses": [
+            "Untuk login, masukkan email dan password Anda di halaman login, lalu klik Masuk.", 
+            "Login bisa dilakukan dengan memasukkan data akun Anda di halaman login aplikasi.", 
+            "Masukkan email dan password Anda, lalu klik tombol Masuk.", 
+            "Pastikan akun Anda terdaftar, kemudian masukkan email dan password dengan benar."
+        ]
+    },
+    {
+        "tag": "points_withdrawal",
+        "patterns": [
+            "Bagaimana cara mencairkan poin?", "Kapan poin bisa dicairkan?", 
+            "Cara mencairkan poin di aplikasi", "Langkah-langkah pencairan poin", 
+            "Poin saya sudah banyak, bagaimana cara mencairkannya?", "Apakah saya bisa mencairkan poin sekarang?", 
+            "Berapa banyak poin yang bisa dicairkan?", "Apa yang perlu dilakukan untuk mencairkan poin?"
+        ],
+        "responses": [
+            "Poin Anda akan dicairkan oleh PMPS setelah transaksi dikonfirmasi.", 
+            "Setelah Anda mengirim sampah, PMPS akan mentransfer uang ke rekening Anda ketika transaksi sudah diinput dan dikonfirmasi.", 
+            "Pencairan poin dilakukan otomatis setelah verifikasi transaksi.", 
+            "Pastikan transaksi Anda sudah disetujui, dan pencairan poin akan diproses."
+        ]
+    },
+    {
+        "tag": "app_feedback",
+        "patterns": [
+            "Bagaimana cara memberikan feedback?", "Apa yang harus dilakukan untuk memberi masukan?", 
+            "Saya ingin memberikan feedback mengenai aplikasi", "Apakah ada fitur feedback?", 
+            "Bagaimana cara memberikan ulasan di aplikasi?", "Feedback untuk aplikasi, kemana saya bisa kirim?"
+        ],
+        "responses": [
+            "Untuk memberikan feedback, buka menu Pengaturan dan pilih opsi Berikan Feedback. Kami sangat menghargai masukan Anda!", 
+            "Anda bisa mengirim feedback melalui menu Pengaturan di aplikasi. Semua masukan diterima dengan baik.", 
+            "Kami senang mendengar feedback Anda! Silakan kirimkan melalui menu yang tersedia di aplikasi."
+        ]
+    },
+    {
+        "tag": "account_deletion",
+        "patterns": [
+            "Bagaimana cara menghapus akun?", "Cara menghapus akun saya di aplikasi", 
+            "Saya ingin menghapus akun saya, bagaimana caranya?", "Bolehkah saya menghapus akun saya?", 
+            "Apa yang terjadi jika akun saya dihapus?", "Apakah data saya akan hilang jika saya menghapus akun?"
+        ],
+        "responses": [
+            "Untuk menghapus akun, buka Pengaturan Akun dan pilih opsi Hapus Akun. Harap diperhatikan bahwa ini akan menghapus data Anda secara permanen.", 
+            "Akun Anda akan dihapus setelah Anda konfirmasi melalui menu Pengaturan Akun. Pastikan untuk mempertimbangkan keputusan ini.",
+            "Data Anda akan dihapus secara permanen saat akun dihapus. Pastikan Anda telah memikirkan keputusan ini dengan matang."
+        ]
+    }
+]
