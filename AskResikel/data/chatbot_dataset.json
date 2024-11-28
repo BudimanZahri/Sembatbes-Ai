@@ -10,12 +10,12 @@
             "Selamat datang, AskResikel!", "Apa kabar, teman?"
         ],
         "responses": [
-            "Halo! Ada yang bisa saya bantu hari ini? 😊", 
-            "Hi! Senang bisa membantu. Ada yang bisa saya lakukan untuk Anda?", 
-            "Hai! Apa kabar? Saya siap membantu Anda kapan saja.",
-            "Halo, saya AskResikel! Senang bertemu Anda. Apa yang bisa saya bantu?", 
-            "Selamat pagi! Semoga hari Anda menyenankan. Ada yang bisa saya bantu?"
-        ]
+            "Halo! Ada yang bisa AskResikel bantu hari ini? 😊", 
+            "Hi! Senang bisa membantu. Ada yang bisa AskResikel lakukan untuk Anda?", 
+            "Hai! Apa kabar? AskResikel siap membantu Anda kapan saja.",
+            "Halo, saya AskResikel! Senang bertemu Anda. Apa yang bisa AskResikel bantu?"
+        ],
+        "context_set": ""
     },
     {
         "tag": "goodbye",
@@ -31,7 +31,8 @@
             "Sampai jumpa lagi! Semoga segala urusan Anda lancar. AskResikel selalu siap membantu!", 
             "Terima kasih! Sampai bertemu lagi. Jangan sungkan untuk menghubungi saya kapan saja!", 
             "AskResikel selalu siap membantu. Sampai jumpa, dan semoga hari Anda luar biasa!"
-        ]
+        ],
+        "context_set": ""
     },
     {
         "tag": "password_management",
@@ -48,7 +49,8 @@
             "Anda bisa mereset password melalui email yang terdaftar di aplikasi.", 
             "Silakan coba untuk menggunakan opsi Lupa Password untuk reset melalui email.",
             "Pastikan Anda memasukkan password lama dengan benar saat mengganti password."
-        ]
+        ],
+        "context_set": ""
     },
     {
         "tag": "account_registration",
@@ -63,7 +65,8 @@
             "Pendaftaran akun bisa dilakukan dengan mengisi form di halaman Daftar pada aplikasi.", 
             "Cukup masukkan data diri Anda di halaman pendaftaran, dan klik Daftar.",
             "Isi form dengan informasi yang diperlukan dan akun Anda akan dibuat."
-        ]
+        ],
+        "context_set": ""
     },
     {
         "tag": "account_login",
@@ -78,7 +81,8 @@
             "Login bisa dilakukan dengan memasukkan data akun Anda di halaman login aplikasi.", 
             "Masukkan email dan password Anda, lalu klik tombol Masuk.", 
             "Pastikan akun Anda terdaftar, kemudian masukkan email dan password dengan benar."
-        ]
+        ],
+        "context_set": ""
     },
     {
         "tag": "points_withdrawal",
@@ -93,7 +97,8 @@
             "Setelah Anda mengirim sampah, PMPS akan mentransfer uang ke rekening Anda ketika transaksi sudah diinput dan dikonfirmasi.", 
             "Pencairan poin dilakukan otomatis setelah verifikasi transaksi.", 
             "Pastikan transaksi Anda sudah disetujui, dan pencairan poin akan diproses."
-        ]
+        ],
+        "context_set": ""
     },
     {
         "tag": "app_feedback",
@@ -106,7 +111,8 @@
             "Untuk memberikan feedback, buka menu Pengaturan dan pilih opsi Berikan Feedback. Kami sangat menghargai masukan Anda!", 
             "Anda bisa mengirim feedback melalui menu Pengaturan di aplikasi. Semua masukan diterima dengan baik.", 
             "Kami senang mendengar feedback Anda! Silakan kirimkan melalui menu yang tersedia di aplikasi."
-        ]
+        ],
+        "context_set": ""
     },
     {
         "tag": "account_deletion",
@@ -119,6 +125,136 @@
             "Untuk menghapus akun, buka Pengaturan Akun dan pilih opsi Hapus Akun. Harap diperhatikan bahwa ini akan menghapus data Anda secara permanen.", 
             "Akun Anda akan dihapus setelah Anda konfirmasi melalui menu Pengaturan Akun. Pastikan untuk mempertimbangkan keputusan ini.",
             "Data Anda akan dihapus secara permanen saat akun dihapus. Pastikan Anda telah memikirkan keputusan ini dengan matang."
+        ],
+        "context_set": ""
+    },
+    {
+        "tag": "swear",
+        "patterns": [
+           "fuck",
+           "bitch",
+           "shut up",
+           "hell",
+           "stupid",
+           "idiot",
+           "dumb ass",
+           "asshole",
+           "fucker",
+           "memek",
+           "anjing",
+           "telaso",
+           "martole",
+           "martole",
+           "lanciau",
+           "lanjiou",
+           "kalempong",
+           "cibai",
+           "kontol"
+        ],
+        "responses": [
+            "Mulut anda kotor",
+            "Tolong hindari penggunaan kata-kata kasar.",
+            "Bahasa yang sopan sangat dihargai di sini.",
+            "Kami menghargai percakapan yang santun, hindari kata-kata tidak pantas.",
+            "Untuk kenyamanan bersama, mari kita berbicara dengan bahasa yang baik."
+        ],
+        "context_set": ""
+     },
+     {
+        "tag": "recycle_sampah",
+        "patterns": [
+            "Apa itu daur ulang sampah?", 
+            "Bagaimana cara mendaur ulang sampah?", 
+            "Kenapa daur ulang sampah itu penting?", 
+            "Apa saja jenis sampah yang bisa didaur ulang?", 
+            "Sampah plastik bisa didaur ulang nggak?", 
+            "Kenapa kita harus mendaur ulang sampah?", 
+            "Apa yang dimaksud dengan sampah organik dan anorganik?", 
+            "Sampah yang bisa didaur ulang itu jenis apa saja?", 
+            "Daur ulang sampah itu menguntungkan atau merugikan?", 
+            "Bagaimana cara memilah sampah dengan benar?"
+        ],
+        "responses": [
+            "Daur ulang sampah adalah proses pengolahan kembali sampah untuk dijadikan barang baru. Hal ini membantu mengurangi volume sampah dan menjaga kelestarian lingkungan.",
+            "Daur ulang sampah sangat penting karena dapat mengurangi jumlah sampah yang dibuang ke tempat pembuangan akhir, menghemat sumber daya alam, dan mengurangi polusi.",
+            "Beberapa jenis sampah yang bisa didaur ulang antara lain kertas, plastik, kaca, dan logam. Sampah organik seperti sisa makanan bisa diolah menjadi kompos.",
+            "Ya, sampah plastik bisa didaur ulang. Namun, pastikan plastik yang akan didaur ulang bersih dan bebas dari kotoran atau makanan.",
+            "Daur ulang sampah itu sangat menguntungkan karena dapat mengurangi beban tempat pembuangan sampah, menghemat energi, serta mengurangi kebutuhan bahan baku baru.",
+            "Sampah organik adalah sampah yang berasal dari bahan alami seperti sisa makanan, daun, dan ranting. Sedangkan sampah anorganik adalah sampah yang tidak mudah terurai, seperti plastik, kaca, dan logam.",
+            "Untuk mendaur ulang sampah, pisahkan sampah organik dan anorganik, pastikan sampah yang akan didaur ulang bersih, dan kumpulkan sampah di tempat yang sesuai.",
+            "Daur ulang sampah tidak hanya menguntungkan lingkungan, tetapi juga dapat menciptakan lapangan pekerjaan dan mengurangi biaya pengelolaan sampah di tempat pembuangan akhir.",
+            "Cara memilah sampah dengan benar adalah dengan memisahkan sampah organik dan anorganik. Sampah organik bisa dijadikan kompos, sementara sampah anorganik bisa didaur ulang menjadi barang baru."
+        ],
+        "context_set": ""
+    },
+    {
+        "tag": "plastik",
+        "patterns": [
+            "Apa itu sampah plastik?", "Bagaimana cara mendaur ulang plastik?", 
+            "Apa yang bisa didaur ulang dari plastik?", "Sampah plastik harus dipisah, kan?", 
+            "Bagaimana cara mengolah plastik bekas?", "Apa manfaat daur ulang plastik?"
+        ],
+        "responses": [
+            "Plastik adalah salah satu jenis sampah yang dapat didaur ulang menjadi produk baru, seperti tas plastik atau botol.",
+            "Untuk mendaur ulang plastik, pisahkan plastik yang bisa didaur ulang seperti PET dan HDPE dari sampah lainnya.",
+            "Pastikan plastik yang akan didaur ulang dibersihkan dari kotoran dan bahan lain sebelum dikumpulkan.",
+            "Daur ulang plastik membantu mengurangi polusi dan menghemat sumber daya alam."
+        ],
+        "context_set": ""
+    },
+    {
+        "tag": "kertas",
+        "patterns": [
+            "Bagaimana cara mendaur ulang kertas?", "Kertas bekas bisa didaur ulang untuk apa?", 
+            "Apa saja jenis kertas yang bisa didaur ulang?", "Apakah kertas koran bisa didaur ulang?", 
+            "Bagaimana cara mengolah sampah kertas?", "Kenapa kertas perlu didaur ulang?"
+        ],
+        "responses": [
+            "Kertas bekas dapat didaur ulang menjadi kertas baru atau produk lainnya seperti tas atau kartu ucapan.",
+            "Jenis kertas yang bisa didaur ulang antara lain karton, koran, dan majalah.",
+            "Pastikan kertas yang akan didaur ulang tidak terkontaminasi bahan lain seperti minyak atau plastik.",
+            "Daur ulang kertas membantu mengurangi jumlah pohon yang ditebang dan mengurangi pencemaran lingkungan."
+        ],
+        "context_set": ""
+    },
+    {
+        "tag": "logam",
+        "patterns": [
+            "Bagaimana cara mendaur ulang logam?", "Logam bekas bisa didaur ulang menjadi apa?", 
+            "Apakah kaleng bisa didaur ulang?", "Apa yang harus dilakukan dengan sampah logam?", 
+            "Kenapa logam harus didaur ulang?", "Logam jenis apa yang bisa didaur ulang?"
+        ],
+        "responses": [
+            "Logam seperti kaleng aluminium dan besi tua dapat dilebur dan dibentuk kembali menjadi produk baru.",
+            "Logam bekas bisa digunakan lagi di berbagai industri, termasuk pembuatan alat dan kendaraan.",
+            "Untuk mendaur ulang logam, pisahkan dari sampah lain dan pastikan tidak tercampur dengan material lain.",
+            "Daur ulang logam mengurangi kebutuhan bahan baku baru dan mengurangi polusi."
+        ],
+        "context_set": ""
+    },
+    {
+        "tag": "kaca",
+        "patterns": [
+            "Bagaimana cara mendaur ulang kaca?", "Kaca bisa didaur ulang menjadi apa?", 
+            "Apakah botol kaca bisa didaur ulang?", "Apa manfaat mendaur ulang kaca?", 
+            "Bagaimana cara mengolah sampah kaca?", "Kenapa kita perlu mendaur ulang kaca?"
+        ],
+        "responses": [
+            "Kaca dapat didaur ulang menjadi botol baru atau produk kaca lainnya.",
+            "Daur ulang kaca mengurangi pemborosan sumber daya alam dan mengurangi limbah yang masuk ke tempat pembuangan sampah.",
+            "Kaca adalah bahan yang dapat didaur ulang tanpa kehilangan kualitasnya, sehingga mendaur ulangnya sangat bermanfaat."
+        ],
+        "context_set": ""
+    },
+    {
+        "tag": "organik",
+        "patterns": [
+            "Apa itu sampah organik?",
+            "Sampah makanan bisa didaur ulang jadi apa?",
+            "Apa yang dimaksud dengan sampah organik?"
+        ],
+        "responses": [
+            "Sampah organik adalah sampah yang berasal dari bahan alami seperti sisa makanan, daun, dan limbah tanaman."
         ]
     }
 ]

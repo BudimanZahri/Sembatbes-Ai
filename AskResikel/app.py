@@ -1,6 +1,6 @@
 import json
-import random
 import joblib
+import numpy as np
 from flask import Flask, jsonify, request, render_template
 from flask_restful import Api, Resource
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -9,6 +9,9 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.pipeline import make_pipeline
 from sklearn.model_selection import train_test_split
 import os
+from sklearn.metrics.pairwise import cosine_similarity
+from sklearn.metrics import confusion_matrix, classification_report
+import random
 
 app = Flask(__name__)
 api = Api(app)
@@ -21,17 +24,19 @@ with open('data/chatbot_dataset.json', 'r', encoding='utf-8') as f:
 intents = []
 patterns = []
 responses = {}
+context_set = {}
 
 for intent in data:
     for pattern in intent['patterns']:
         patterns.append(pattern)
         intents.append(intent['tag'])
     responses[intent['tag']] = intent['responses']
+    context_set[intent['tag']] = intent.get('context_set', None)
 
 le = LabelEncoder()
 intents_encoded = le.fit_transform(intents)
 
-X_train, X_test, y_train, y_test = train_test_split(patterns, intents_encoded, test_size=0.2, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(patterns, intents_encoded, test_size=0.3, random_state=42)
 
 def load_or_train_model():
     if os.path.exists(MODEL_FILENAME):
@@ -50,6 +55,7 @@ def load_or_train_model():
 model = load_or_train_model()
 
 accuracy = model.score(X_test, y_test)
+
 print(f"Model Accuracy: {accuracy * 100:.2f}%")
 
 def predict_intent(text):
@@ -57,29 +63,55 @@ def predict_intent(text):
     intent = le.inverse_transform([predicted_class])[0]
     return intent
 
-def get_bot_response(user_input):
-    intent = predict_intent(user_input)
+def get_best_matching_pattern(user_input):
+    vectorizer = TfidfVectorizer()
+    X = vectorizer.fit_transform(patterns)
+    user_input_vector = vectorizer.transform([user_input])
+    similarity_scores = cosine_similarity(user_input_vector, X)
+    best_match_index = np.argmax(similarity_scores)
+    return best_match_index, similarity_scores[0][best_match_index]
+
+def get_bot_response(user_input, user_context=None):
+    best_match_index, similarity_score = get_best_matching_pattern(user_input)
     
-    if intent in responses:
-        response = random.choice(responses[intent])
-    else:
-        response = "Sorry, I didn't understand that. Could you please rephrase?"
+    intent = intents[best_match_index]
+    
+    if similarity_score < 0.2:
+        return "Maaf, saya tidak mengerti. Bisa jelaskan lebih lanjut?"
+
+    context_required = context_set.get(intent)
+    if context_required and user_context != context_required:
+        return "Sorry, I can't respond to that right now. Please continue the previous conversation."
+
+    response = random.choice(responses[intent])
     return response
+
 
 class ChatbotAPI(Resource):
     def post(self):
         user_input = request.json.get('message')
+        user_context = request.json.get('context')
         if not user_input:
             return jsonify({'error': 'No message provided'})
 
-        response = get_bot_response(user_input)
+        response = get_bot_response(user_input, user_context)
         return jsonify({'response': response})
 
 api.add_resource(ChatbotAPI, '/chat')
+
+def show_confusion_matrix():
+    y_pred = model.predict(X_test)
+    cm = confusion_matrix(y_test, y_pred)
+    print("Confusion Matrix:")
+    print(cm)
+
+    print("\nClassification Report:")
+    print(classification_report(y_test, y_pred, target_names=le.classes_))
 
 @app.route('/')
 def index():
     return render_template('index.html')
 
 if __name__ == '__main__':
+    show_confusion_matrix()
     app.run(debug=True)
