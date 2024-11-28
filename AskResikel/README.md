@@ -51,12 +51,12 @@ This project is a chatbot application designed to recognize and classify user in
 
 ## Installation
 
-### Backend (FastAPI)
+### Backend (Flask)
 
 1. Clone the repository:
 ```bash
    git https://github.com/BudimanZahri/Sembatbes-Ai.git
-   cd Sembatbes-Ai
+   cd Sembatbes-Ai/AskResikel
    ```
 2. Create a virtual environment:
 ```bash
@@ -67,7 +67,7 @@ This project is a chatbot application designed to recognize and classify user in
 ```bash
    pip install -r requirements.txt
    ```
-4. Run the FastAPI server:
+4. Run the Flask server:
 ```bash
    python app.py
    ```
