@@ -144,11 +144,13 @@
            "anjing",
            "telaso",
            "martole",
-           "martole",
+           "tempik",
+           "tobrut",
            "lanciau",
            "lanjiou",
            "kalempong",
            "cibai",
+           "meki",
            "kontol"
         ],
         "responses": [
@@ -157,92 +159,6 @@
             "Bahasa yang sopan sangat dihargai di sini.",
             "Kami menghargai percakapan yang santun, hindari kata-kata tidak pantas.",
             "Untuk kenyamanan bersama, mari kita berbicara dengan bahasa yang baik."
-        ],
-        "context_set": ""
-     },
-     {
-        "tag": "recycle_sampah",
-        "patterns": [
-            "Apa itu daur ulang sampah?", 
-            "Bagaimana cara mendaur ulang sampah?", 
-            "Kenapa daur ulang sampah itu penting?", 
-            "Apa saja jenis sampah yang bisa didaur ulang?", 
-            "Sampah plastik bisa didaur ulang nggak?", 
-            "Kenapa kita harus mendaur ulang sampah?", 
-            "Apa yang dimaksud dengan sampah organik dan anorganik?", 
-            "Sampah yang bisa didaur ulang itu jenis apa saja?", 
-            "Daur ulang sampah itu menguntungkan atau merugikan?", 
-            "Bagaimana cara memilah sampah dengan benar?"
-        ],
-        "responses": [
-            "Daur ulang sampah adalah proses pengolahan kembali sampah untuk dijadikan barang baru. Hal ini membantu mengurangi volume sampah dan menjaga kelestarian lingkungan.",
-            "Daur ulang sampah sangat penting karena dapat mengurangi jumlah sampah yang dibuang ke tempat pembuangan akhir, menghemat sumber daya alam, dan mengurangi polusi.",
-            "Beberapa jenis sampah yang bisa didaur ulang antara lain kertas, plastik, kaca, dan logam. Sampah organik seperti sisa makanan bisa diolah menjadi kompos.",
-            "Ya, sampah plastik bisa didaur ulang. Namun, pastikan plastik yang akan didaur ulang bersih dan bebas dari kotoran atau makanan.",
-            "Daur ulang sampah itu sangat menguntungkan karena dapat mengurangi beban tempat pembuangan sampah, menghemat energi, serta mengurangi kebutuhan bahan baku baru.",
-            "Sampah organik adalah sampah yang berasal dari bahan alami seperti sisa makanan, daun, dan ranting. Sedangkan sampah anorganik adalah sampah yang tidak mudah terurai, seperti plastik, kaca, dan logam.",
-            "Untuk mendaur ulang sampah, pisahkan sampah organik dan anorganik, pastikan sampah yang akan didaur ulang bersih, dan kumpulkan sampah di tempat yang sesuai.",
-            "Daur ulang sampah tidak hanya menguntungkan lingkungan, tetapi juga dapat menciptakan lapangan pekerjaan dan mengurangi biaya pengelolaan sampah di tempat pembuangan akhir.",
-            "Cara memilah sampah dengan benar adalah dengan memisahkan sampah organik dan anorganik. Sampah organik bisa dijadikan kompos, sementara sampah anorganik bisa didaur ulang menjadi barang baru."
-        ],
-        "context_set": ""
-    },
-    {
-        "tag": "plastik",
-        "patterns": [
-            "Apa itu sampah plastik?", "Bagaimana cara mendaur ulang plastik?", 
-            "Apa yang bisa didaur ulang dari plastik?", "Sampah plastik harus dipisah, kan?", 
-            "Bagaimana cara mengolah plastik bekas?", "Apa manfaat daur ulang plastik?"
-        ],
-        "responses": [
-            "Plastik adalah salah satu jenis sampah yang dapat didaur ulang menjadi produk baru, seperti tas plastik atau botol.",
-            "Untuk mendaur ulang plastik, pisahkan plastik yang bisa didaur ulang seperti PET dan HDPE dari sampah lainnya.",
-            "Pastikan plastik yang akan didaur ulang dibersihkan dari kotoran dan bahan lain sebelum dikumpulkan.",
-            "Daur ulang plastik membantu mengurangi polusi dan menghemat sumber daya alam."
-        ],
-        "context_set": ""
-    },
-    {
-        "tag": "kertas",
-        "patterns": [
-            "Bagaimana cara mendaur ulang kertas?", "Kertas bekas bisa didaur ulang untuk apa?", 
-            "Apa saja jenis kertas yang bisa didaur ulang?", "Apakah kertas koran bisa didaur ulang?", 
-            "Bagaimana cara mengolah sampah kertas?", "Kenapa kertas perlu didaur ulang?"
-        ],
-        "responses": [
-            "Kertas bekas dapat didaur ulang menjadi kertas baru atau produk lainnya seperti tas atau kartu ucapan.",
-            "Jenis kertas yang bisa didaur ulang antara lain karton, koran, dan majalah.",
-            "Pastikan kertas yang akan didaur ulang tidak terkontaminasi bahan lain seperti minyak atau plastik.",
-            "Daur ulang kertas membantu mengurangi jumlah pohon yang ditebang dan mengurangi pencemaran lingkungan."
-        ],
-        "context_set": ""
-    },
-    {
-        "tag": "logam",
-        "patterns": [
-            "Bagaimana cara mendaur ulang logam?", "Logam bekas bisa didaur ulang menjadi apa?", 
-            "Apakah kaleng bisa didaur ulang?", "Apa yang harus dilakukan dengan sampah logam?", 
-            "Kenapa logam harus didaur ulang?", "Logam jenis apa yang bisa didaur ulang?"
-        ],
-        "responses": [
-            "Logam seperti kaleng aluminium dan besi tua dapat dilebur dan dibentuk kembali menjadi produk baru.",
-            "Logam bekas bisa digunakan lagi di berbagai industri, termasuk pembuatan alat dan kendaraan.",
-            "Untuk mendaur ulang logam, pisahkan dari sampah lain dan pastikan tidak tercampur dengan material lain.",
-            "Daur ulang logam mengurangi kebutuhan bahan baku baru dan mengurangi polusi."
-        ],
-        "context_set": ""
-    },
-    {
-        "tag": "kaca",
-        "patterns": [
-            "Bagaimana cara mendaur ulang kaca?", "Kaca bisa didaur ulang menjadi apa?", 
-            "Apakah botol kaca bisa didaur ulang?", "Apa manfaat mendaur ulang kaca?", 
-            "Bagaimana cara mengolah sampah kaca?", "Kenapa kita perlu mendaur ulang kaca?"
-        ],
-        "responses": [
-            "Kaca dapat didaur ulang menjadi botol baru atau produk kaca lainnya.",
-            "Daur ulang kaca mengurangi pemborosan sumber daya alam dan mengurangi limbah yang masuk ke tempat pembuangan sampah.",
-            "Kaca adalah bahan yang dapat didaur ulang tanpa kehilangan kualitasnya, sehingga mendaur ulangnya sangat bermanfaat."
         ],
         "context_set": ""
     },
@@ -255,6 +171,65 @@
         ],
         "responses": [
             "Sampah organik adalah sampah yang berasal dari bahan alami seperti sisa makanan, daun, dan limbah tanaman."
+        ]
+    },
+    {
+        "tag": "team",
+        "patterns": [
+            "Siapa yang membuatmu?",
+            "Siapa developer yang membuat ini?",
+            "siapa yang buat aplikasi ini?"
+        ],
+        "responses": [
+            "Sembatbes Ai",
+            "Sembatbes Ai = Semarang Batam Bekasi Ai",
+            "Sembatbes"
+        ]
+    },
+    {
+        "tag": "team_member",
+        "patterns": [
+            "siapa saja anggota yang berkontribusi dalam aplikasi ini?",
+            "siapa saja anggota yang membuat aplikasi ini?",
+            "siapa saja anggota yang membuat chatbot ini?",
+            "sembatbes terdiri dari siapa saja?",
+            "sembatbes member?",
+            "ini timnya siapa aja yang buat?",
+            "anggota sembatbes?"
+        ],
+        "responses": [
+            "Muhammad Asri Alfajri = Design Researcher, Anggoro Setyo Nugroho = Data Engineer, Budiman Zahri Nainggolan = Machine Learning Engineer, Nana Casmana Ade Wikarta = Machine Learning DevOps, Alya Sherly Al Azmy = Machine Learning DevOps"
+        ]
+    },
+    {
+        "tag": "name",
+        "patterns": [
+            "nama?",
+            "nama kamu",
+            "nama kamu siapa",
+            "siapa kau",
+            "siapa ini?",
+            "kau ni apa?",
+            "aku ngomong sama sapa sih?"
+        ],
+        "responses": [
+            "AskResikel",
+            "saya adalah AskResikel",
+            "aku AskResikel"
+        ]
+    },
+    {
+        "tag": "mechatronics_definition",
+        "patterns": [
+            "apa itu mekatronika?",
+            "mekatronika tu ape",
+            "apa itu meka",
+            "mekatronik",
+            "meka"
+        ],
+        "responses": [
+            "Mektronika adalah ilmu yang menggabungkan teknik mesin, teknik elektronika, teknik informatika, dan teknik pengaturan untuk merancang, membuat, mengoperasikan, dan memelihara sistem",
+            "Mekatronika adalah suatu ilmu yang mengkombinasikan secara sinergis rekayasa mekanika, elektronika, dan kontrol."
         ]
     }
 ]

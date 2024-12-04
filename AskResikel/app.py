@@ -118,5 +118,5 @@ def index():
     return render_template('index.html')
 
 if __name__ == '__main__':
-    show_confusion_matrix()
+    # show_confusion_matrix()
     app.run(debug=True)
