@@ -129,7 +129,6 @@
                     let hours = now.getUTCHours() + 7; // UTC +7
                     const minutes = now.getUTCMinutes();
                     
-                    // Ensure the hours stay within the 24-hour range
                     if (hours >= 24) {
                         hours -= 24;
                     }
@@ -146,7 +145,8 @@
                         fetch('/chat', {
                             method: 'POST',
                             headers: {
-                                'Content-Type': 'application/json'
+                                'Content-Type': 'application/json',
+                                'API-Key': '499c18c6-9f57-45f8-b6eb-ba2c8275e274'
                             },
                             body: JSON.stringify({ message: userInput })
                         })

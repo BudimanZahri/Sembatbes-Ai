@@ -86,9 +86,14 @@ def get_bot_response(user_input, user_context=None):
     response = random.choice(responses[intent])
     return response
 
+hardcode_api_key = '499c18c6-9f57-45f8-b6eb-ba2c8275e274'
 
 class ChatbotAPI(Resource):
     def post(self):
+        api_key = request.headers.get('API-Key')
+        if api_key != hardcode_api_key:
+            return jsonify({'error': 'Invalid API key. Please check your API key and try again.'})
+
         user_input = request.json.get('message')
         user_context = request.json.get('context')
         if not user_input:
