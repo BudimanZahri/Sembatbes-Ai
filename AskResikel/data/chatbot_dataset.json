@@ -151,7 +151,8 @@
            "kalempong",
            "cibai",
            "meki",
-           "kontol"
+           "kontol",
+           "pungo"
         ],
         "responses": [
             "Mulut anda kotor",
@@ -171,6 +172,28 @@
         ],
         "responses": [
             "Sampah organik adalah sampah yang berasal dari bahan alami seperti sisa makanan, daun, dan limbah tanaman."
+        ]
+    },
+    {
+        "tag": "anorganik",
+        "patterns": [
+            "Apa itu sampah anorganik?",
+            "Sampah anorganik itu apa?",
+            "Apa yang dimaksud dengan sampah anorganik?"
+        ],
+        "responses": [
+            "Sampah anorganik adalah jenis sampah yang berasal dari bahan-bahan nonhayati, baik berupa produk sintetis maupun hasil proses teknologi pengolahan bahan tambang. Sampah ini umumnya terdiri dari material seperti logam, plastik, kaca, batu, dan keramik."
+        ]
+    },
+        {
+        "tag": "anorganik",
+        "patterns": [
+            "Sampah anorganik itu apa saja?",
+            "Apa saja contoh sampah anorganik?",
+        ],
+        "responses": [
+            "Macam-macam sampah anorganik yaitu logam, plastik, kaca, kertas, tekstil, elektronik, karet, dan banyak lagi",
+            "Ada berbagai jenis sampah anorganik yang bisa ditemui disekitar kita yaitu seperti plastik, kaca, logam, kertas, barang-barang elektronik, kayu, karet, tekstil, dan banyak lagi"
         ]
     },
     {
