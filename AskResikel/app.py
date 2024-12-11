@@ -77,7 +77,7 @@ def get_bot_response(user_input, user_context=None):
     intent = intents[best_match_index]
     
     if similarity_score < 0.2:
-        return "Maaf, saya tidak mengerti. Bisa jelaskan lebih lanjut?"
+        return "Maaf, AskResikel hanya dapat menjawab tentang pengelolaan sampah atau dokumentasi terkait aplikasi Resikel. Silakan ajukan pertanyaan seputar topik tersebut."
 
     context_required = context_set.get(intent)
     if context_required and user_context != context_required:

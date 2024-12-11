@@ -85,22 +85,6 @@
         "context_set": ""
     },
     {
-        "tag": "points_withdrawal",
-        "patterns": [
-            "Bagaimana cara mencairkan poin?", "Kapan poin bisa dicairkan?", 
-            "Cara mencairkan poin di aplikasi", "Langkah-langkah pencairan poin", 
-            "Poin saya sudah banyak, bagaimana cara mencairkannya?", "Apakah saya bisa mencairkan poin sekarang?", 
-            "Berapa banyak poin yang bisa dicairkan?", "Apa yang perlu dilakukan untuk mencairkan poin?"
-        ],
-        "responses": [
-            "Poin Anda akan dicairkan oleh PMPS setelah transaksi dikonfirmasi.", 
-            "Setelah Anda mengirim sampah, PMPS akan mentransfer uang ke rekening Anda ketika transaksi sudah diinput dan dikonfirmasi.", 
-            "Pencairan poin dilakukan otomatis setelah verifikasi transaksi.", 
-            "Pastikan transaksi Anda sudah disetujui, dan pencairan poin akan diproses."
-        ],
-        "context_set": ""
-    },
-    {
         "tag": "app_feedback",
         "patterns": [
             "Bagaimana cara memberikan feedback?", "Apa yang harus dilakukan untuk memberi masukan?", 
@@ -257,5 +241,123 @@
             "Mektronika adalah ilmu yang menggabungkan teknik mesin, teknik elektronika, teknik informatika, dan teknik pengaturan untuk merancang, membuat, mengoperasikan, dan memelihara sistem",
             "Mekatronika adalah suatu ilmu yang mengkombinasikan secara sinergis rekayasa mekanika, elektronika, dan kontrol."
         ]
+    },
+    {
+        "tag": "recycling_organik",
+        "patterns": [
+             "Cara mengolah sampah organik", "Bagaimana cara mengolah sampah organik?", "Kalau sampah organik diapain ya?", "Ada cara daur ulang sampah organik nggak?", "Sampah organik bisa dimanfaatin jadi apa?", "Cara bikin kompos dari sampah organik gimana sih?"
+        ],
+        "responses": [
+            "Sampah organik bisa dijadikan kompos, cukup masukkan ke tempat kompos dan biarkan membusuk jadi pupuk alami.",
+            "Cara paling mudah, kumpulkan sampah organik di lubang tanah atau alat pengomposan. Tunggu sampai jadi kompos.",
+            "Sampah organik bisa diolah jadi pupuk cair atau kompos. Cukup pisahkan dari sampah lain dan biarkan terurai."
+        ]
+    },
+    {
+        "tag": "example_organik",
+        "patterns": [
+             "Contoh-contoh sampah organik apa aja sih?", "Sampah organik itu kayak apa aja?", "Kasih tahu dong contoh sampah organik", "Apa aja yang termasuk sampah organik?", "Sampah organik itu misalnya gimana?"
+        ],
+        "responses": [
+            "Contohnya kayak kulit buah, sisa sayuran, daun-daun kering, atau ampas kopi.", "Yang termasuk sampah organik misalnya sisa makanan, kulit pisang, atau daun kering.", "Sampah organik itu ya kayak sisa makanan, daun gugur, atau limbah dapur kayak ampas teh."
+        ]
+    },
+    {
+        "tag": "fun_fact_organik",
+        "patterns": [
+            "Ada fakta unik soal sampah organik?", "Coba kasih tahu fun fact tentang sampah organik!", "Fakta menarik soal sampah organik ada nggak?", "Apa yang menarik dari sampah organik?", "Sampah organik punya fakta unik apa?"
+        ],
+        "responses": [
+            "Tahukah kamu? Kompos dari sampah organik bisa mengurangi emisi gas rumah kaca jika diolah dengan benar.", "Sampah organik adalah salah satu jenis limbah yang menyumbang sekitar 50% sampah rumah tangga di Indonesia!", "Fakta menarik: Satu ember kompos dari sampah organik bisa menyuburkan kebun kecil selama berbulan-bulan!"
+        ]
+    },
+    {
+        "tag": "app_documentation.points_withdrawal",
+        "patterns": [
+            "Bagaimana cara mencairkan poin?", "Kapan poin bisa dicairkan?", 
+            "Cara mencairkan poin di aplikasi", "Langkah-langkah pencairan poin", 
+            "Poin saya sudah banyak, bagaimana cara mencairkannya?", "Apakah saya bisa mencairkan poin sekarang?", 
+            "Berapa banyak poin yang bisa dicairkan?", "Apa yang perlu dilakukan untuk mencairkan poin?", "gimana cara dapatin poin?"
+        ],
+        "responses": [
+            "Poin Anda akan dicairkan oleh PMPS setelah transaksi dikonfirmasi.", 
+            "Setelah Anda mengirim sampah, PMPS akan mentransfer uang ke rekening Anda ketika transaksi sudah diinput dan dikonfirmasi.", 
+            "Pencairan poin dilakukan otomatis setelah verifikasi transaksi.", 
+            "Pastikan transaksi Anda sudah disetujui, dan pencairan poin akan diproses."
+        ],
+        "context_set": ""
+    },
+    {
+        "tag": "app_documentation.check_pmps_area",
+        "patterns": [
+            "Bagaimana cara cek area binaan PMPS?", "Di mana saya bisa cek area binaan PMPS?", 
+            "Cara cek area binaan PMPS di aplikasi", "Di aplikasi, bagaimana cara cek area binaan PMPS?"
+        ],
+        "responses": [
+            "Anda bisa mengakses menu Peta & Lokasi di aplikasi untuk melihat area binaan PMPS.",
+            "Cek area binaan PMPS melalui aplikasi dengan membuka menu Peta & Lokasi."
+        ],
+        "context_set": ""
+    },
+    {
+        "tag": "app_documentation.check_tpa_tps_map",
+        "patterns": [
+            "Di mana saya bisa cek peta TPA dan TPS?", "Cara cek peta TPA dan TPS di aplikasi?", 
+            "Peta TPA dan TPS ada di mana?", "Bagaimana cara melihat peta TPA dan TPS?",
+            "lokasi tpa ceknya di mana?", "lokasi tps ceknya di mana?" 
+        ],
+        "responses": [
+            "Anda dapat mengakses peta TPA dan TPS melalui menu Peta & Lokasi di aplikasi.",
+            "Untuk melihat peta TPA dan TPS, buka menu Peta & Lokasi pada aplikasi."
+        ],
+        "context_set": ""
+    },
+    {
+        "tag": "app_documentation.check_waste_price",
+        "patterns": [
+            "Bagaimana cara cek harga sampah?", "Di mana saya bisa lihat harga sampah?", 
+            "Cara cek harga sampah di aplikasi", "Harga sampah per unit ada di mana?"
+        ],
+        "responses": [
+            "Harga sampah per unit dapat Anda cek di menu Data Sampah dalam aplikasi.",
+            "Untuk melihat harga sampah, buka menu Data Sampah di aplikasi."
+        ],
+        "context_set": ""
+    },
+    {
+        "tag": "app_documentation.report_waste_pile",
+        "patterns": [
+            "Bagaimana cara lapor penumpukan sampah?", "Jika ada penumpukan sampah, bagaimana cara melapor?", 
+            "Cara lapor sampah menumpuk di lokasi?", "Bagaimana cara lapor penumpukan sampah di aplikasi?"
+        ],
+        "responses": [
+            "Untuk melapor penumpukan sampah, Anda dapat mengupload gambar dan membagikan lokasi saat ini melalui aplikasi.",
+            "Laporkan penumpukan sampah dengan mengunggah gambar dan lokasi Anda di aplikasi."
+        ],
+        "context_set": ""
+    },
+    {
+        "tag": "app_documentation.points_calculation",
+        "patterns": [
+            "Poin dihitung dari mana?", "Dari apa saja poin dihitung?", 
+            "Bagaimana cara poin dihitung?", "Poin itu dihitung berdasarkan apa?"
+        ],
+        "responses": [
+            "Poin dihitung berdasarkan sampah yang Anda kirimkan. Harga per unit sampah dapat dilihat di menu Data Sampah dalam aplikasi.",
+            "Poin Anda dihitung dari sampah yang disubmit, dan harga per unitnya bisa dicek di menu Data Sampah."
+        ],
+        "context_set": ""
+    },
+    {
+        "tag": "app_documentation.submit_waste",
+        "patterns": [
+            "Bagaimana cara submit sampah?", "Cara kerja submit sampah di aplikasi?", 
+            "Apa yang harus dilakukan untuk submit sampah?", "Bagaimana cara kirim sampah ke PMPS?"
+        ],
+        "responses": [
+            "Untuk submit sampah, Anda harus mengumpulkan sampah sesuai dengan Data Sampah, cek harga per unit, dan kemudian kirimkan ke PMPS. Setelah transaksi dikonfirmasi, poin atau uang akan langsung ditransfer berdasarkan harga yang tercatat.",
+            "Anda dapat mengumpulkan sampah, cek harga per unit di Data Sampah, lalu submit ke PMPS. Poin atau uang akan ditransfer setelah transaksi dikonfirmasi."
+        ],
+        "context_set": ""
     }
 ]
