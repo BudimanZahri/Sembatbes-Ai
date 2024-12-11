@@ -359,5 +359,59 @@
             "Anda dapat mengumpulkan sampah, cek harga per unit di Data Sampah, lalu submit ke PMPS. Poin atau uang akan ditransfer setelah transaksi dikonfirmasi."
         ],
         "context_set": ""
+    },
+    {
+        "tag": "app_documentation.recycling_tips",
+        "patterns": [
+        "Bagaimana cara mendaur ulang plastik?",
+        "Tips untuk mendaur ulang sampah",
+        "Apa yang bisa saya lakukan dengan botol plastik bekas?",
+        "Cara daur ulang kertas?",
+        "Apakah ada cara mudah untuk mendaur ulang kaca?",
+        "Tips mendaur ulang sampah rumah tangga"
+        ],
+        "responses": [
+        "Untuk mendaur ulang plastik, pastikan membersihkan botol atau kemasan plastik dari sisa makanan atau cairan sebelum dibuang ke tempat sampah daur ulang.",
+        "Anda dapat memanfaatkan botol plastik bekas untuk membuat pot tanaman atau wadah penyimpanan sederhana.",
+        "Kertas bekas dapat digunakan kembali untuk catatan kecil atau kerajinan tangan sebelum dibuang.",
+        "Pastikan kaca pecah dimasukkan dalam wadah khusus agar aman saat dibuang ke fasilitas daur ulang.",
+        "Salah satu tips mendaur ulang adalah memilah sampah organik dan anorganik dari awal untuk memudahkan proses pengelolaan."
+        ],
+        "context_set": ""
+    },
+    {
+        "tag": "app_documentation.waste_management_impact",
+        "patterns": [
+        "Mengapa penting mengelola sampah?",
+        "Apa dampak dari pengelolaan sampah yang buruk?",
+        "Kenapa harus mendaur ulang?",
+        "Apa manfaat daur ulang sampah?",
+        "Mengapa kita harus memilah sampah?"
+        ],
+        "responses": [
+        "Pengelolaan sampah yang baik dapat mengurangi pencemaran lingkungan dan mencegah dampak buruk terhadap kesehatan.",
+        "Mendaur ulang membantu mengurangi jumlah sampah yang berakhir di tempat pembuangan akhir dan menghemat sumber daya alam.",
+        "Dengan memilah sampah, kita dapat memastikan bahan yang masih dapat didaur ulang tidak terbuang percuma.",
+        "Manfaat dari daur ulang antara lain mengurangi emisi gas rumah kaca dan membantu menciptakan lingkungan yang lebih bersih.",
+        "Kelola sampah dengan baik untuk menjaga keseimbangan ekosistem dan mengurangi kerusakan lingkungan."
+        ],
+        "context_set": ""
+    },
+    {
+        "tag": "app_documentation.composting_guide",
+        "patterns": [
+        "Bagaimana cara membuat kompos?",
+        "Apa yang bisa dijadikan kompos?",
+        "Langkah-langkah membuat kompos di rumah?",
+        "Apakah saya bisa membuat kompos dari sisa makanan?",
+        "Cara mudah membuat kompos"
+        ],
+        "responses": [
+        "Anda dapat membuat kompos dengan mengumpulkan sisa makanan seperti kulit buah, sayuran, daun kering, dan sisa kopi, lalu mencampurnya di wadah khusus.",
+        "Pastikan kompos tetap lembab dengan menyiram air secukupnya dan aduk secara berkala agar proses dekomposisi berjalan optimal.",
+        "Jangan memasukkan bahan seperti plastik, kaca, atau sisa makanan berminyak ke dalam kompos.",
+        "Kompos yang sudah matang biasanya berwarna coklat tua, gembur, dan tidak berbau. Gunakan sebagai pupuk organik untuk tanaman."
+        ],
+        "context_set": ""
     }
 ]
