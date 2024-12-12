@@ -159,7 +159,7 @@
         ]
     },
     {
-        "tag": "definisi_anorganik",
+        "tag": "anorganic_definition",
         "patterns": [
             "Apa itu sampah anorganik?",
             "Pengertian sampah anorganik",
@@ -172,7 +172,7 @@
         ]
     },
         {
-        "tag": "contoh_anorganik",
+        "tag": "anorganic_example",
         "patterns": [
             "Contoh sampah anorganik",
             "Sampah anorganik itu apa saja?",
