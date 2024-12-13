@@ -159,7 +159,7 @@
         ]
     },
     {
-        "tag": "definisi_anorganik",
+        "tag": "anorganic_definition",
         "patterns": [
             "Apa itu sampah anorganik?",
             "Pengertian sampah anorganik",
@@ -171,16 +171,204 @@
             "Sampah anorganik adalah jenis sampah yang berasal dari bahan-bahan nonhayati, baik berupa produk sintetis maupun hasil proses teknologi pengolahan bahan tambang. Sampah ini umumnya terdiri dari material seperti logam, plastik, kaca, batu, dan keramik."
         ]
     },
-        {
-        "tag": "contoh_anorganik",
+    {
+        "tag": "anorganic_vs_organic",
         "patterns": [
-            "Contoh sampah anorganik",
-            "Sampah anorganik itu apa saja?",
-            "Apa saja contoh sampah anorganik?"
+            "Apa perbedaan sampah organik dan anorganik?",
+            "Bagaimana membedakan sampah organik dengan anorganik?"
         ],
         "responses": [
-            "Macam-macam sampah anorganik yaitu logam, plastik, kaca, kertas, tekstil, elektronik, karet, dan banyak lagi",
-            "Ada berbagai jenis sampah anorganik yang bisa ditemui disekitar kita yaitu seperti plastik, kaca, logam, kertas, barang-barang elektronik, kayu, karet, tekstil, dan banyak lagi"
+            "Sampah organik berasal dari bahan alami yang dapat terurai, sedangkan sampah anorganik berasal dari bahan buatan atau mineral yang sulit terurai secara alami."
+        ]
+    },
+    {
+        "tag": "anorganic_example",
+        "patterns": [
+            "Contoh sampah anorganik itu apa saja?",
+            "Sebutkan contoh dari sampah anorganik."
+        ],
+        "responses": [
+            "Contoh sampah anorganik meliputi plastik, kaca, kaleng, dan logam."
+        ]
+    },
+    {
+        "tag": "anorganic_glass",
+        "patterns": [
+            "Apakah kaca termasuk sampah anorganik?",
+            "Kaca itu anorganik atau bukan?"
+        ],
+        "responses": [
+            "Ya, kaca termasuk sampah anorganik karena tidak dapat terurai secara alami."
+        ]
+    },
+    {
+        "tag": "anorganic_metal",
+        "patterns": [
+            "Apakah logam termasuk sampah anorganik?",
+            "Logam itu organik atau anorganik?"
+        ],
+        "responses": [
+            "Ya, logam termasuk sampah anorganik karena tidak dapat terurai secara alami."
+        ]
+    },
+    {
+        "tag": "anorganic_paper",
+        "patterns": [
+            "Apakah kertas termasuk sampah anorganik?",
+            "Kertas itu organik atau anorganik?"
+        ],
+        "responses": [
+            "Kertas biasanya dianggap sampah organik, tetapi jika sudah dilapisi bahan kimia tertentu, dapat menjadi anorganik."
+        ]
+    },
+    {
+        "tag": "anorganic_statistics",
+        "patterns": [
+            "Seberapa banyak sampah anorganik yang dihasilkan setiap hari?",
+            "Apa statistik tentang sampah anorganik?"
+        ],
+        "responses": [
+            "Setiap hari, jutaan ton sampah anorganik dihasilkan di seluruh dunia, dengan plastik menjadi salah satu komponen terbesar."
+        ]
+    },
+    {
+        "tag": "anorganic_duration",
+        "patterns": [
+            "Berapa lama waktu yang dibutuhkan sampah anorganik untuk terurai?",
+            "Apakah sampah anorganik bisa hancur dengan sendirinya?"
+        ],
+        "responses": [
+            "Sampah anorganik seperti plastik dapat membutuhkan waktu ratusan hingga ribuan tahun untuk terurai secara alami."
+        ]
+    },
+    {
+        "tag": "anorganic_harm",
+        "patterns": [
+            "Apa dampak sampah anorganik bagi lingkungan?",
+            "Kenapa sampah anorganik berbahaya bagi alam?"
+        ],
+        "responses": [
+            "Sampah anorganik dapat mencemari lingkungan karena sulit terurai dan sering menyebabkan kerusakan ekosistem."
+        ]
+    },
+    {
+        "tag": "anorganic_recycling",
+        "patterns": [
+            "Apakah sampah anorganik bisa didaur ulang?",
+            "Sampah anorganik dapat digunakan kembali?"
+        ],
+        "responses": [
+            "Ya, sampah anorganik seperti plastik, kaca, dan logam dapat didaur ulang dengan proses tertentu."
+        ]
+    },
+    {
+        "tag": "anorganic_non_recyclable",
+        "patterns": [
+            "Apakah semua sampah anorganik bisa didaur ulang?",
+            "Apa ada sampah anorganik yang tidak bisa didaur ulang?"
+        ],
+        "responses": [
+            "Tidak semua sampah anorganik bisa didaur ulang, seperti beberapa jenis plastik campuran atau bahan berbahaya tertentu."
+        ]
+    },
+    {
+        "tag": "anorganic_management",
+        "patterns": [
+            "Bagaimana cara mengelola sampah anorganik?",
+            "Apa langkah-langkah pengelolaan sampah anorganik?"
+        ],
+        "responses": [
+            "Sampah anorganik dapat dikelola dengan cara memilah, mendaur ulang, dan membuangnya ke tempat pembuangan yang sesuai."
+        ]
+    },
+    {
+        "tag": "anorganic_sorting",
+        "patterns": [
+            "Mengapa penting memilah sampah anorganik?",
+            "Apa manfaat memilah sampah anorganik?"
+        ],
+        "responses": [
+            "Memilah sampah anorganik membantu proses daur ulang dan mengurangi volume sampah yang berakhir di tempat pembuangan akhir."
+        ]
+    },
+    {
+        "tag": "anorganic_reduction",
+        "patterns": [
+            "Bagaimana cara mengurangi sampah anorganik?",
+            "Apa cara untuk menekan produksi sampah anorganik?"
+        ],
+        "responses": [
+            "Mengurangi sampah anorganik dapat dilakukan dengan menggunakan produk daur ulang, menghindari penggunaan plastik sekali pakai, dan memilih bahan ramah lingkungan."
+        ]
+    },
+    {
+        "tag": "anorganic_burning",
+        "patterns": [
+            "Apakah sampah anorganik boleh dibakar?",
+            "Bagaimana efek membakar sampah anorganik?"
+        ],
+        "responses": [
+            "Membakar sampah anorganik seperti plastik dapat menghasilkan gas beracun yang berbahaya bagi kesehatan dan lingkungan."
+        ]
+    },
+    {
+        "tag": "plastic_recycling",
+        "patterns": [
+            "Bagaimana proses daur ulang plastik?",
+            "Apa langkah-langkah mendaur ulang plastik?"
+        ],
+        "responses": [
+            "Proses daur ulang plastik melibatkan pengumpulan, pemilahan, pencucian, pencacahan, dan pembentukan ulang menjadi produk baru."
+        ]
+    },
+    {
+        "tag": "glass_benefits",
+        "patterns": [
+            "Mengapa kaca lebih ramah lingkungan dibanding plastik?",
+            "Apa kelebihan kaca dibanding plastik?"
+        ],
+        "responses": [
+            "Kaca lebih ramah lingkungan karena dapat didaur ulang tanpa mengurangi kualitasnya dan tidak menghasilkan mikroplastik."
+        ]
+    },
+    {
+        "tag": "tin_recycling",
+        "patterns": [
+            "Bagaimana cara mendaur ulang kaleng?",
+            "Apa langkah-langkah mendaur ulang sampah kaleng?"
+        ],
+        "responses": [
+            "Sampah kaleng didaur ulang dengan cara dilelehkan dan dibentuk ulang menjadi produk baru."
+        ]
+    },
+    {
+        "tag": "cardboard_reuse",
+        "patterns": [
+            "Bagaimana cara memanfaatkan kardus bekas?",
+            "Apa yang bisa dibuat dari kardus bekas?"
+        ],
+        "responses": [
+            "Kardus bekas dapat digunakan kembali untuk kemasan, kerajinan tangan, atau didaur ulang menjadi kardus baru."
+        ]
+    },
+    {
+        "tag": "paper_recycling",
+        "patterns": [
+            "Bagaimana proses daur ulang kertas?",
+            "Apa yang dilakukan dalam daur ulang kertas?"
+        ],
+        "responses": [
+            "Proses daur ulang kertas melibatkan penghancuran, pencampuran dengan air, penyaringan, dan pencetakan ulang menjadi kertas baru."
+        ]
+    },
+    {
+        "tag": "other_anorganic",
+        "patterns": [
+            "Apa contoh lain sampah anorganik selain plastik dan kaca?",
+            "Selain plastik dan kaca, sampah anorganik apa lagi yang umum?"
+        ],
+        "responses": [
+            "Contoh lain sampah anorganik meliputi styrofoam, kabel bekas, dan peralatan elektronik."
         ]
     },
     {
