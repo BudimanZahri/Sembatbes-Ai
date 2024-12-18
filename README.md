@@ -4,7 +4,7 @@ This repository contains two key components for an intelligent waste management 
 
 ---
 
-## **1. Chatbot Project**
+## **1. Chatbot Project (AskResikel)**
 
 ### **Overview**
 
