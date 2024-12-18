@@ -5,4 +5,4 @@ In this project, the algorithm chosen is VGG (Visual Geometry Group), which is a
 ## Dataset
 
 The dataset used for this **resikel app**
-- *Dataset link:* [Link to the dataset](https://drive.google.com/drive/folders/1pT9DIW71rZLO4eOdtPrKECe2c9siwMln?usp=sharing)
+- *Dataset link:* [Link to the dataset](https://drive.google.com/drive/folders/1bM-tS1-oQW_LHZIoZo1ZD5Fli75IXXej?usp=drive_link)
