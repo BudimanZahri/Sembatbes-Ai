@@ -8,11 +8,11 @@ This project implements a **waste classification feature** for the **Resikel** a
 
 ### **Image Classification**
 - Classifies waste images into **5 categories**:  
-1. **Botol Kaca**  
-2. **Kaleng**  
-3. **Kardus**  
-4. **Kertas**  
-5. **Plastik**  
+   - **Botol Kaca**  
+   - **Kaleng**  
+   - **Kardus**  
+   - **Kertas**  
+   - **Plastik**  
 
 ### **Dataset**
 - The dataset contains a total of **6000+ images** split into:  
