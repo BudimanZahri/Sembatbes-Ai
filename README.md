@@ -60,11 +60,11 @@ This component implements an image classification system that predicts the type 
 
 - **Image Classification**:  
   Classifies images into **5 categories** of waste:
-  1. **Botol Kaca**  
-  2. **Kaleng**  
-  3. **Kardus**  
-  4. **Kertas**  
-  5. **Plastik**
+    - **Botol Kaca**  
+    - **Kaleng**  
+    - **Kardus**  
+    - **Kertas**  
+    - **Plastik**
 
 - **Dataset**:  
   - Contains over **6000+ images**.
