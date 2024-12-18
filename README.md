@@ -1,6 +1,6 @@
 # Chatbot and Waste Classification Project (Resikel)
 
-This repository contains two key components for an intelligent waste management system: a **Chatbot for Recycling Inquiries and Swearing Detection** and a **Waste Image Classification System**. Together, these systems aim to enhance user engagement and facilitate proper waste management using advanced machine learning and deep learning techniques.
+This repository contains two key components for an intelligent waste management system: a **Chatbot for Waste Management** and a **Waste Image Classification System**. Together, these systems aim to enhance user engagement and facilitate proper waste management using advanced machine learning and deep learning techniques.
 
 ---
 
